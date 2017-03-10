@@ -3,6 +3,9 @@
 # Variables
 u="$USER"
 
+# update apt
+sudo apt-get update
+
 # install debian packages
 sudo apt-get install emacs sl xsel git
 
