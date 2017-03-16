@@ -7,7 +7,7 @@ u="$USER"
 sudo apt-get update
 
 # install debian packages
-sudo apt-get install emacs sl xsel git tmux
+sudo apt-get install emacs sl xsel git tmux x11vnc
 
 # copy configuration file
 cp -rf /home/$u/configuration/.emacs.d /home/$u/
