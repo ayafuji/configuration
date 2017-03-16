@@ -21,3 +21,4 @@ mkdir /home/$u/remote
 
 # add source including to bash_profile for tmux
 echo "source /home/$u/configuration/.user_profile" >> /home/$u/.bash_profile
+echo "source /home/$u/configuration/.user_profile" >> /home/$u/.bashrc
