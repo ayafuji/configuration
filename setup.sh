@@ -9,6 +9,9 @@ sudo apt-get update
 # install debian packages
 sudo apt-get install emacs sl xsel git tmux x11vnc -y
 
+# install rainbow
+sudo pip install rainbowstream
+
 # copy configuration file
 cp -rf /home/$u/configuration/.emacs.d /home/$u/
 
