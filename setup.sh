@@ -18,6 +18,9 @@ cp -rf /home/$u/configuration/.emacs.d /home/$u/
 # copy tmux.conf
 cp /home/$u/configuration/.tmux.conf /home/$u/
 
+# copy git config
+cp /home/$u/configuration/.gitconfig /home/$u/
+
 # create directory
 mkdir /home/$u/workspace
 mkdir /home/$u/remote
