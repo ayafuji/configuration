@@ -1,3 +1,25 @@
+# alias
+grc_ver=1.11
+if which grc >/dev/null 2>&1 ; then
+  :
+else
+    cd /home/$u/configuration/
+    wget http://kassiopeia.juls.savba.sk/~garabik/software/grc/grc_$grc_ver.orig.tar.gz
+    tar zxvf /home/$u/configuration/grc_$grc_ver.orig.tar.gz
+    cd /home/$u/configuration/grc-$grc_ver
+    sudo sh /home/$u/configuration/grc-$grc_ver/install.sh
+fi
+
+alias mount='grc mount'
+alias ifconfig='grc ifconfig'
+alias dig='grc dig'
+alias ldap='grc ldap'
+alias netstat='grc netstat'
+alias ping='grc ping'
+alias ps='grc ps'
+alias traceroute='grc traceroute'
+alias gcc='grc gcc'
+
 # Variables
 u="$USER"
 
