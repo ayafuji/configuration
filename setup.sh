@@ -1,10 +1,29 @@
 #! /bin/sh
 
+# grc
+grc_ver=1.11
+if which grc >/dev/null 2>&1 ; then
+  :
+else
+    cd /home/$u/configuration/
+    wget http://kassiopeia.juls.savba.sk/~garabik/software/grc/grc_$grc_ver.orig.tar.gz
+    tar zxvf /home/$u/configuration/grc_$grc_ver.orig.tar.gz
+    cd /home/$u/configuration/grc-$grc_ver
+    sudo sh /home/$u/configuration/grc-$grc_ver/install.sh
+fi
+
+# add xpanes repository
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:greymd/tmux-xpanes
+
 # Variables
 u="$USER"
 
 # update apt
 sudo apt-get update
+
+# install xpanes
+sudo apt install tmux-xpanes
 
 # install debian packages
 sudo apt-get install emacs sl xsel git tmux x11vnc -y
