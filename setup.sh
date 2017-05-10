@@ -22,11 +22,8 @@ u="$USER"
 # update apt
 sudo apt-get update
 
-# install xpanes
-sudo apt install tmux-xpanes
-
 # install debian packages
-sudo apt-get install emacs sl xsel git tmux x11vnc -y
+sudo apt-get install emacs xsel git tmux x11vnc tmux-xpanes -y
 
 # install rainbow
 sudo pip install rainbowstream
