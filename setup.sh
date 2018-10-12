@@ -23,7 +23,7 @@ u="$USER"
 sudo apt-get update
 
 # install debian packages
-sudo apt-get install emacs xsel git tmux x11vnc tmux-xpanes -y
+sudo apt-get install emacs xsel git tmux x11vnc tmux-xpanes grc -y
 
 # install rainbow
 sudo pip install rainbowstream
