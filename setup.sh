@@ -23,7 +23,7 @@ u="$USER"
 sudo apt-get update
 
 # install debian packages
-sudo apt-get install emacs xsel git tmux x11vnc tmux-xpanes grc -y
+sudo apt-get install xsel git tmux x11vnc tmux-xpanes grc -y
 
 # install rainbow
 sudo pip install rainbowstream
@@ -38,8 +38,8 @@ cp /home/$u/configuration/.tmux.conf /home/$u/
 cp /home/$u/configuration/.gitconfig /home/$u/
 
 # create directory
-mkdir /home/$u/workspace
-mkdir /home/$u/remote
+mkdir /home/$u/work
+#mkdir /home/$u/remote
 
 # add source including to bash_profile for tmux
 echo "source /home/$u/configuration/.user_profile" >> /home/$u/.bashrc
